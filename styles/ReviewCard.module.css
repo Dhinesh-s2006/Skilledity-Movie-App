@@ -1,0 +1,33 @@
+.reviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: start;
+  margin: 1.5rem 0;
+}
+
+.reviewCard {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 1.2rem;
+  border-radius: 12px;
+  width: 45%;
+  min-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+}
+
+.reviewAuthor {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.reviewContent {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

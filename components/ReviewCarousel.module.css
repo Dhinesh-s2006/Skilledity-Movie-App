@@ -1,0 +1,29 @@
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navButton {
+  cursor: pointer;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  user-select: none;
+}
+
+.reviewSlider {
+  width: 300px; /* or whatever width you want */
+  overflow: hidden;
+}
+
+.reviewTrack {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+.reviewSlide {
+  min-width: 100%;
+}

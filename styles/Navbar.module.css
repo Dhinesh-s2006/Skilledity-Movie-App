@@ -1,0 +1,130 @@
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navLink {
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--accent-color);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+}
+
+.searchInput {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  flex-grow: 1;
+  outline: none;
+}
+
+.searchButton {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logoSearchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .navMenuOpen {
+    display: flex;
+  }
+
+  .searchContainer {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+}

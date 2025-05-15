@@ -1,0 +1,31 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/movies/[genre]/page",{
+
+/***/ "(app-pages-browser)/./app/movies/[genre]/genre.module.css":
+/*!*********************************************!*\
+  !*** ./app/movies/[genre]/genre.module.css ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"container\":\"genre_container__HtIyW\",\"title\":\"genre_title__aWxQ4\",\"grid\":\"genre_grid__DGrsa\",\"card\":\"genre_card__l76sy\",\"poster\":\"genre_poster__0FoWW\",\"details\":\"genre_details__jFyTA\",\"titleText\":\"genre_titleText__ddA2m\",\"overview\":\"genre_overview__0hwfc\"};\n    if(true) {\n      // 1747349443381\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"ab436de69c8f\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL2FwcC9tb3ZpZXMvW2dlbnJlXS9nZW5yZS5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUEwSCxjQUFjLHNEQUFzRDtBQUM1TixNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJDOlxcVXNlcnNcXERISU5FU0guU1xcRGVza3RvcFxcTW92aWVfQXBwXFxhcHBcXG1vdmllc1xcW2dlbnJlXVxcZ2VucmUubW9kdWxlLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbm1vZHVsZS5leHBvcnRzID0ge1wiY29udGFpbmVyXCI6XCJnZW5yZV9jb250YWluZXJfX0h0SXlXXCIsXCJ0aXRsZVwiOlwiZ2VucmVfdGl0bGVfX2FXeFE0XCIsXCJncmlkXCI6XCJnZW5yZV9ncmlkX19ER3JzYVwiLFwiY2FyZFwiOlwiZ2VucmVfY2FyZF9fbDc2c3lcIixcInBvc3RlclwiOlwiZ2VucmVfcG9zdGVyX18wRm9XV1wiLFwiZGV0YWlsc1wiOlwiZ2VucmVfZGV0YWlsc19fakZ5VEFcIixcInRpdGxlVGV4dFwiOlwiZ2VucmVfdGl0bGVUZXh0X19kZEEybVwiLFwib3ZlcnZpZXdcIjpcImdlbnJlX292ZXJ2aWV3X18waHdmY1wifTtcbiAgICBpZihtb2R1bGUuaG90KSB7XG4gICAgICAvLyAxNzQ3MzQ5NDQzMzgxXG4gICAgICB2YXIgY3NzUmVsb2FkID0gcmVxdWlyZShcIkM6L1VzZXJzL0RISU5FU0guUy9EZXNrdG9wL01vdmllX0FwcC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NvbXBpbGVkL21pbmktY3NzLWV4dHJhY3QtcGx1Z2luL2htci9ob3RNb2R1bGVSZXBsYWNlbWVudC5qc1wiKShtb2R1bGUuaWQsIHtcInB1YmxpY1BhdGhcIjpcIi9fbmV4dC9cIixcImVzTW9kdWxlXCI6ZmFsc2UsXCJsb2NhbHNcIjp0cnVlfSk7XG4gICAgICBtb2R1bGUuaG90LmRpc3Bvc2UoY3NzUmVsb2FkKTtcbiAgICAgIFxuICAgIH1cbiAgXG5tb2R1bGUuZXhwb3J0cy5fX2NoZWNrc3VtID0gXCJhYjQzNmRlNjljOGZcIlxuIl0sIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-pages-browser)/./app/movies/[genre]/genre.module.css\n"));
+
+/***/ }),
+
+/***/ "(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5CDHINESH.S%5C%5CDesktop%5C%5CMovie_App%5C%5Capp%5C%5Cmovies%5C%5C%5Bgenre%5D%5C%5Cgenre.module.css%22%2C%22ids%22%3A%5B%5D%7D&server=false!":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5CDHINESH.S%5C%5CDesktop%5C%5CMovie_App%5C%5Capp%5C%5Cmovies%5C%5C%5Bgenre%5D%5C%5Cgenre.module.css%22%2C%22ids%22%3A%5B%5D%7D&server=false! ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval(__webpack_require__.ts("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./app/movies/[genre]/genre.module.css */ \"(app-pages-browser)/./app/movies/[genre]/genre.module.css\", 23));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvYnVpbGQvd2VicGFjay9sb2FkZXJzL25leHQtZmxpZ2h0LWNsaWVudC1lbnRyeS1sb2FkZXIuanM/bW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyQyUzQSU1QyU1Q1VzZXJzJTVDJTVDREhJTkVTSC5TJTVDJTVDRGVza3RvcCU1QyU1Q01vdmllX0FwcCU1QyU1Q2FwcCU1QyU1Q21vdmllcyU1QyU1QyU1QmdlbnJlJTVEJTVDJTVDZ2VucmUubW9kdWxlLmNzcyUyMiUyQyUyMmlkcyUyMiUzQSU1QiU1RCU3RCZzZXJ2ZXI9ZmFsc2UhIiwibWFwcGluZ3MiOiJBQUFBLDBNQUFxSCIsInNvdXJjZXMiOlsiIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiQzpcXFxcVXNlcnNcXFxcREhJTkVTSC5TXFxcXERlc2t0b3BcXFxcTW92aWVfQXBwXFxcXGFwcFxcXFxtb3ZpZXNcXFxcW2dlbnJlXVxcXFxnZW5yZS5tb2R1bGUuY3NzXCIpO1xuIl0sIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22C%3A%5C%5CUsers%5C%5CDHINESH.S%5C%5CDesktop%5C%5CMovie_App%5C%5Capp%5C%5Cmovies%5C%5C%5Bgenre%5D%5C%5Cgenre.module.css%22%2C%22ids%22%3A%5B%5D%7D&server=false!\n"));
+
+/***/ })
+
+});
