@@ -1,4 +1,0 @@
-{
-  "/movies/[genre]/page": "app/movies/[genre]/page.js",
-  "/home/page": "app/home/page.js"
-}
