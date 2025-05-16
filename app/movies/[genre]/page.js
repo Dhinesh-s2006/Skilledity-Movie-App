@@ -43,7 +43,7 @@ export default async function GenrePage({ params }) {
         {movies.map((movie) => (
           <div key={movie.id} className={styles.card}>
             <img
-              src={movie.poster_path ? `${IMAGE_BASE_URL}${movie.poster_path}` : '/no-image.jpg'}
+              src={movie.poster_path ? `${IMAGE_BASE_URL}${movie.poster_path}` : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='}
               alt={movie.title}
               className={styles.poster}
             />
