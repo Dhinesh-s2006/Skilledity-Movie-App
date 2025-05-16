@@ -25,7 +25,9 @@
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  color: #ffb400; /* Elegant amber */
 }
+
 
 .reviewContent {
   font-size: 0.95rem;
