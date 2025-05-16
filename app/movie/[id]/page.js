@@ -170,26 +170,17 @@ if (loading) {
         </div>
 
       
-{/* Similar Movies Section */}
-<div className={styles.section}>
-  <h2 className={styles.sectionTitle}>Similar Movies</h2>
-  {similarMovies.length > 0 ? (
-    <div className={styles.similarMoviesGrid}>
-      {similarMovies.map((movie) => (
-        <div key={movie.id} className={styles.movieCard}>
-          <img
-            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            alt={movie.title}
-            className={styles.movieImage}
-          />
-          <div className={styles.movieTitle}>{movie.title}</div>
-        </div>
-      ))}
-    </div>
-  ) : (
-    <p className={styles.noContent}>No similar movies found.</p>
-  )}
-</div>
+{similarMovies.map((movie) => (
+  <Link key={movie.id} href={`/movie/${movie.id}`} className={styles.movieCard}>
+    <img
+      src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+      alt={movie.title}
+      className={styles.movieImage}
+    />
+    <div className={styles.movieTitle}>{movie.title}</div>
+  </Link>
+))}
+
 
 
        <Footer />
