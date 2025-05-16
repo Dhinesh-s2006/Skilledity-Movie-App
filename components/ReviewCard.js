@@ -9,7 +9,7 @@ const ReviewCard = ({ review }) => {
     (avatarPath.startsWith('/https') ? 
       avatarPath.substring(1) : 
       getImageUrl(avatarPath, 'w200')) : 
-    '/placeholder-avatar.jpg';
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
 
   const date = new Date(created_at).toLocaleDateString('en-US', {
     year: 'numeric',
