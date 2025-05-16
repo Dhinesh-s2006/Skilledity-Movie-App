@@ -76,7 +76,7 @@
 
 .similarMoviesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding: 2rem;
   background: linear-gradient(
@@ -92,6 +92,7 @@
   color: #eee;
   transition: background-color 0.3s ease;
 }
+
 
 .similarMoviesGrid:hover {
   background: linear-gradient(
@@ -211,10 +212,10 @@ background: linear-gradient(
   border-radius: 12px;
   padding: 20px;
   color: white;
-  line-height: 1.6;
+  line-height: 3.5;
   display: grid;
-  grid-template-rows: repeat(9, 1fr);
-  gap: 4px; /* Reduced vertical spacing */
+  grid-template-rows: repeat(9, auto); /* Allow rows to auto size */
+  gap: 4px;
   height: 100%;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -222,32 +223,28 @@ background: linear-gradient(
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 .rightSection div {
   display: flex;
-  justify-content: flex-start; /* align left */
-  align-items: center;         /* vertically center label and value */
-  background-color: transparent;
-  padding: 10px;
-  border-radius: 6px;
-  gap: 8px;                    /* spacing between label and value */
+  align-items: flex-start;
+  gap: 10px;  /* space between label and value */
 }
 
 .rightSection div strong {
-  width: 140px;                /* adjust width as needed */
+  flex-shrink: 0;          /* prevent label from shrinking */
+  width: 160px;            /* increase width as needed */
   text-align: right;
-  padding-right: 5px;          /* spacing before colon */
-  color: #00bcd4;              /* your attractive color */
+  color: #00bcd4;
   font-weight: 600;
-  white-space: nowrap;         /* prevent line break */
+  white-space: nowrap;
+  padding-right: 8px;      /* spacing after label */
 }
 
-/* Value styles */
 .rightSection div span {
-  color: #ccc;
+  flex-grow: 1;            /* allow value to fill remaining space */
+  word-break: break-word;  /* break long words if needed */
 }
+
+
 
 .descriptionBox,
 .reviewBox {
