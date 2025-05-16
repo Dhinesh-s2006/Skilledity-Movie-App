@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { use } from 'react'; // Import use from React
 import Image from 'next/image';
 import Link from 'next/link';
-import { getMovieDetails, getMovieReviews, getSimilarMovies } from '../../../../services/api';
+import { getMovieDetails, getMovieReviews, getSimilarMovies } from '../../../services/api';
 import styles from '../../../styles/MovieDetails.module.css';
 import ReviewCard from '../../../components/ReviewCard';
 import MovieCard from '../../../components/MovieCard';
