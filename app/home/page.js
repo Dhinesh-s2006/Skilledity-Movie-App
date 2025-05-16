@@ -71,8 +71,9 @@ export default function Home() {
               />
             </>
           )}
-          <Footer />
         </div>
+
+        <Footer />
       </main>
     </Suspense>
   );
