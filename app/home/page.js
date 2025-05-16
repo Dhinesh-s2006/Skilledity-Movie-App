@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 import Navbar from '../../components/Navbar';
@@ -27,51 +27,53 @@ export default function Home() {
   }, [searchQuery]);
 
   return (
-    <main>
-      <div className="logo-container">
-        <img src="/skilledity-logo.png" alt="Skilledity Logo" className="logo-image" />
-      </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <main>
+        <div className="logo-container">
+          <img src="/skilledity-logo.png" alt="Skilledity Logo" className="logo-image" />
+        </div>
 
-      <Navbar />
+        <Navbar />
 
-      <div className="container">
-        {showingSearchResults ? (
-          <SearchResults query={searchQuery} />
-        ) : (
-          <>
-            <Genres />
+        <div className="container">
+          {showingSearchResults ? (
+            <SearchResults query={searchQuery} />
+          ) : (
+            <>
+              <Genres />
 
-            <MovieSection 
-              title="Upcoming Movies" 
-              fetchMovies={getUpcomingMovies} 
-              type="upcoming" 
-              id="upcoming" 
-            />
+              <MovieSection 
+                title="Upcoming Movies" 
+                fetchMovies={getUpcomingMovies} 
+                type="upcoming" 
+                id="upcoming" 
+              />
 
-            <MovieSection 
-              title="Latest Movies" 
-              fetchMovies={getLatestMovies} 
-              type="latest" 
-              id="latest" 
-            />
+              <MovieSection 
+                title="Latest Movies" 
+                fetchMovies={getLatestMovies} 
+                type="latest" 
+                id="latest" 
+              />
 
-            <MovieSection 
-              title="Top-rated Movies" 
-              fetchMovies={getTopRatedMovies} 
-              type="topRated" 
-              id="topRated" 
-            />
+              <MovieSection 
+                title="Top-rated Movies" 
+                fetchMovies={getTopRatedMovies} 
+                type="topRated" 
+                id="topRated" 
+              />
 
-            <MovieSection 
-              title="Popular Movies" 
-              fetchMovies={getPopularMovies} 
-              type="popular" 
-              id="popular" 
-            />
-          </>
-        )}
-        <Footer />
-      </div>
-    </main>
+              <MovieSection 
+                title="Popular Movies" 
+                fetchMovies={getPopularMovies} 
+                type="popular" 
+                id="popular" 
+              />
+            </>
+          )}
+          <Footer />
+        </div>
+      </main>
+    </Suspense>
   );
 }
