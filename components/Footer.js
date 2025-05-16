@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <div>
+        <div className={styles.footerColumn}>
           <h4>Home</h4>
           <ul>
             <li>Categories</li>
@@ -14,7 +14,7 @@ export default function Footer() {
             <li>FAQ</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.footerColumn}>
           <h4>Movies</h4>
           <ul>
             <li>Genres</li>
@@ -23,7 +23,7 @@ export default function Footer() {
             <li>Popular</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.footerColumn}>
           <h4>Shows</h4>
           <ul>
             <li>Genres</li>
@@ -32,13 +32,13 @@ export default function Footer() {
             <li>Popular</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.footerColumn}>
           <h4>Support</h4>
           <ul>
             <li>Contact Us</li>
           </ul>
         </div>
-        <div>
+        <div className={styles.footerColumn}>
           <h4>Subscription</h4>
           <ul>
             <li>Plans</li>
@@ -46,7 +46,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className={styles.bottomNote}>© 2025 MovieHub. All rights reserved.</div>
+      <div className={styles.bottomNote}>© 2025 Skilledity. All rights reserved.</div>
     </footer>
   );
 }
