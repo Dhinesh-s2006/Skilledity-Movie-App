@@ -12,7 +12,7 @@ const handleResponse = async (response) => {
 
 // Function to get image URL
 export const getImageUrl = (path, size = 'w500') => {
-  if (!path) return '/placeholder-image.jpg'; // Fallback for null values
+  if (!path) return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='; // Fallback for null values
   return `${IMAGE_BASE_URL}${size}${path}`;
 };
 
