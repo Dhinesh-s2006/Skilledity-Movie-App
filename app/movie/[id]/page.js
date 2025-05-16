@@ -52,13 +52,17 @@ export default function MovieDetails({ params }) {
     fetchData();
   }, [id]);
 
-  if (loading) {
-    return (
-      <div className={styles.loadingContainer}>
-        <div className={styles.loading}>Loading...</div>
+if (loading) {
+  return (
+    <div className={styles.loadingContainer}>
+      <div>
+        <div className={styles.loadingSpinner}></div>
+        <div className={styles.loadingText}>Loading Movie Details...</div>
       </div>
-    );
-  }
+    </div>
+  );
+}
+
 
   if (error || !movie) {
     return (
@@ -138,17 +142,18 @@ export default function MovieDetails({ params }) {
 
   {/* Right Section - Movie Info */}
   <div className={styles.rightSection}>
-    <div><strong> 📅 Release Year:</strong> {movie.release_date}</div>
-    <div><strong>⭐ Rating:</strong> {movie.vote_average}</div>
-    <div><strong>Genres:</strong>{movie.genres?.map(g => g.name).join(', ')}</div>
-    <div><strong>Status:</strong> {movie.status}</div>
-    <div><strong>Original Language:</strong> {movie.original_language}</div>
-    <div><strong>Budget:</strong> ${movie.budget}</div>
-    <div><strong>Revenue:</strong> ${movie.revenue}</div>
-    <div><strong>Popularity:</strong> {movie.popularity}</div>
-    <div><strong>Production Country:</strong> {movie.production_countries?.map(c => c.name).join(', ')}</div>
+   <div><strong className={styles.labelText}>📅 Release Year:</strong><span className={styles.infoValue}> {movie.release_date}</span></div>
+<div><strong className={styles.labelText}>⭐ Rating:</strong><span className={styles.infoValue}> {movie.vote_average}</span></div>
+<div><strong className={styles.labelText}>Genres:</strong><span className={styles.infoValue}> {movie.genres?.map(g => g.name).join(', ')}</span></div>
+<div><strong className={styles.labelText}>Status:</strong><span className={styles.infoValue}> {movie.status}</span></div>
+<div><strong className={styles.labelText}>Original Language:</strong><span className={styles.infoValue}> {movie.original_language}</span></div>
+<div><strong className={styles.labelText}>Budget:</strong><span className={styles.infoValue}> ${movie.budget}</span></div>
+<div><strong className={styles.labelText}>Revenue:</strong><span className={styles.infoValue}> ${movie.revenue}</span></div>
+<div><strong className={styles.labelText}>Popularity:</strong><span className={`${styles.infoValue} ${styles.popularityColor}`}> {movie.popularity}</span></div>
+<div><strong className={styles.labelText}>Production Country:</strong><span className={styles.infoValue}> {movie.production_countries?.map(c => c.name).join(', ')}</span></div>
   </div>
 </div>
+
 
 
             {movie.homepage && (
@@ -165,20 +170,27 @@ export default function MovieDetails({ params }) {
         </div>
 
       
-
-        {/* Similar Movies Section */}
-        <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Similar Movies</h2>
-          <div className={styles.similarMoviesGrid}>
-            {similarMovies.length > 0 ? (
-              similarMovies.map((movie) => (
-                <MovieCard key={movie.id} movie={movie} />
-              ))
-            ) : (
-              <p className={styles.noContent}>No similar movies found.</p>
-            )}
-          </div>
+{/* Similar Movies Section */}
+<div className={styles.section}>
+  <h2 className={styles.sectionTitle}>Similar Movies</h2>
+  {similarMovies.length > 0 ? (
+    <div className={styles.similarMoviesGrid}>
+      {similarMovies.map((movie) => (
+        <div key={movie.id} className={styles.movieCard}>
+          <img
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            alt={movie.title}
+            className={styles.movieImage}
+          />
+          <div className={styles.movieTitle}>{movie.title}</div>
         </div>
+      ))}
+    </div>
+  ) : (
+    <p className={styles.noContent}>No similar movies found.</p>
+  )}
+</div>
+
 
        <Footer />
       </div>
