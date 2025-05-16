@@ -334,6 +334,11 @@ background: linear-gradient(
     flex-direction: column;
   }
 
+    .similarMoviesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
   .posterContainer {
     width: 100%;
     max-width: 300px;
@@ -350,6 +355,7 @@ background: linear-gradient(
 
   .container {
     flex-direction: column;
+    
   }
 }
 
