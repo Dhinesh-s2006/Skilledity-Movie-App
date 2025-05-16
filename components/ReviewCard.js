@@ -1,6 +1,6 @@
-import styles from '..ReviewCard.module.css';
+import styles from '../styles/ReviewCard.module.css';
 import Image from 'next/image';
-import { getImageUrl } from '..api';
+import { getImageUrl } from '../../api';
 
 const ReviewCard = ({ review }) => {
   const { author, content, created_at, author_details } = review;
